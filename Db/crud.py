@@ -17,7 +17,7 @@ class FilmDbMan:
         return await db.fetch_all(query=query)
 
     @classmethod
-    async def get_film(cla, id):
+    async def get_film(cls, id):
         query = Table1.select(Table1.c.id==id)
         return await db.fetch_one(query=query)
 
